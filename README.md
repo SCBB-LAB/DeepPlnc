@@ -37,7 +37,7 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 ==================
 To predict the lncRNAs, In parent directory execute following command:
 
-DeepPlnc.sh test /usr/local/bin/ (Path of RNAfold in your local system)
+sh DeepPlnc.sh test /usr/local/bin/ (Path of RNAfold in your local system)
 
 NOTICE: When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
