@@ -60,3 +60,11 @@ lncRNA detection module (DeepPlnc) gives output in following format
 test.txt = Chunks wise probability score of the sequence provided.
 test_results.tsv = CLassification result of the sequence provided.
 plot = folder containing "csv" files to construct violin and line plot.
+
+
+
+==================
+*Citation*
+==================
+
+Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRXiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v1
