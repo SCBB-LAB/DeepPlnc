@@ -67,4 +67,4 @@ plot = folder containing "csv" files to construct violin and line plot.
 *Citation*
 ==================
 
-Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRXiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v1
+Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v1
