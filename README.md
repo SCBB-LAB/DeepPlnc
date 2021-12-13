@@ -20,12 +20,13 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 5. plotly
 6. pandas
 7. RNAfold (ViennaRNA package download it from here: "https://www.tbi.univie.ac.at/RNA/")
+8. gcc
 
 ==================
 *File description*
 ==================
 
-1. DeepPlnc.sh = Complete execution script.
+1. DeepPlnc = Complete execution script.
 2. DeepPlnc.py = Python script for detecting lncRNAs from sequences provided.
 3. DeepPlnc_model.h5 = Trained model.
 4. test = fasta sequence. (Minimum 200 bases in length)
@@ -37,7 +38,7 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 ==================
 To predict the lncRNAs, In parent directory execute following command:
 
-sh DeepPlnc.sh test /usr/local/bin/ (Path of RNAfold in your local system)
+./DeepPlnc test /usr/local/bin/ (Path of RNAfold in your local system)
 
 NOTICE: When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning: mkdir: cannot create directory ‘plot’: File exists 
 
