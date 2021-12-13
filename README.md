@@ -29,7 +29,7 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 1. DeepPlnc = Complete execution script.
 2. DeepPlnc.py = Python script for detecting lncRNAs from sequences provided.
 3. DeepPlnc_model.h5 = Trained model.
-4. test = fasta sequence. (Minimum 200 bases in length)
+4. test = fasta sequence file. (Minimum 200 bases in length)
 5. make-plot.py = Python script for box and violin plot generation for a single sequence.
 6. batch-plot.py = Python script for violin plot generation for a batch (10 sequence).
 
