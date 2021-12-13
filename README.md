@@ -58,7 +58,7 @@ lncRNA detection module (DeepPlnc) gives output in following format
 
 test.txt = Chunks wise probability score of the sequence provided.
 test_results.tsv = Classification result of the sequence provided.
-plot = folder containing "csv" files to construct violin and line plot.
+plot = folder containing ".csv" files to construct violin and line plot.
 
 
 
