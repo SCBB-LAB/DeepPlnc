@@ -39,9 +39,7 @@ To predict the lncRNAs, In parent directory execute following command:
 
 sh DeepPlnc.sh test /usr/local/bin/ (Path of RNAfold in your local system)
 
-NOTICE: When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
-
-mkdir: cannot create directory ‘plot’: File exists 
+NOTICE: When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning: mkdir: cannot create directory ‘plot’: File exists 
 
 To plot box and violin plot for a single sequence, switch to directory name "plot" and execute following command:
 
@@ -58,7 +56,7 @@ python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 lncRNA detection module (DeepPlnc) gives output in following format 
 
 test.txt = Chunks wise probability score of the sequence provided.
-test_results.tsv = CLassification result of the sequence provided.
+test_results.tsv = Classification result of the sequence provided.
 plot = folder containing "csv" files to construct violin and line plot.
 
 
