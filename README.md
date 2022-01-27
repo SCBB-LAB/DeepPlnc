@@ -21,6 +21,7 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 6. pandas
 7. RNAfold (ViennaRNA package download it from here: "https://www.tbi.univie.ac.at/RNA/")
 8. gcc
+9. python module "multiprocessing"
 
 ==================
 *File description*
