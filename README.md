@@ -37,6 +37,8 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 ==================
 *Running script*
 ==================
+chmod a+x DeepPlnc (To make execution script executable)
+
 To predict the lncRNAs, In parent directory execute following command:
 
 ./DeepPlnc test /usr/local/bin/ (Path of RNAfold in your local system)
