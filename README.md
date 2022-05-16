@@ -34,7 +34,7 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 5. make-plot.py = Python script for box and violin plot generation for a single sequence.
 6. batch-plot.py = Python script for violin plot generation for a batch (10 sequence).
 7. predict_GPU.py = Python script for detecting lncRNAs utilizing GPU.
-9. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence, and secondary structure(bot bracket). All in one line separated by tab for a single instance.
+9. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not < 400 bases), and secondary structure(bot bracket). All in one line separated by tab for a single instance.
 8. model_hyper.py = Python script build model implementing hyperparameter tuning
 
 ==================
