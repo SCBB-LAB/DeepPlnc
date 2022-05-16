@@ -33,6 +33,9 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 4. test = fasta sequence. (Minimum 200 bases in length)
 5. make-plot.py = Python script for box and violin plot generation for a single sequence.
 6. batch-plot.py = Python script for violin plot generation for a batch (10 sequence).
+7. predict_GPU.py = Python script for detecting lncRNAs utilizing GPU.
+9. file_format_GPU = file format of input for script predict_GPU.py.
+8. model_hyper.py = Python script build model implementing hyperparameter tuning
 
 ==================
 *Running script*
@@ -41,7 +44,7 @@ To predict the lncRNAs, In parent directory execute following command:
 
 sh DeepPlnc.sh test /usr/local/bin/ (Path of RNAfold in your local system)
 
-python3 predict_GPU.py file_format_GPU # to predict lncRNA utilizing GPU
+python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
 
 NOTICE: When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
@@ -75,5 +78,12 @@ plot = folder containing "csv" files to construct violin and line plot.
 *Citation*
 ==================
 
-Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v2
+Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v1
+
+
+
+
+
+
+
 
