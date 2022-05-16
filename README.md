@@ -62,7 +62,7 @@ To build model implementing hyperparameter tuning
 
 python3 model_hyper.py filename
 
-filename: file containing label, sequence, and secondary structure(bot bracket). All in one line separated by tab for a single instance.
+filename: file containing label, sequence (sequence length of >= 200 bases but not < 400 bases), and secondary structure(bot bracket). All in one line separated by tab for a single instance.
 
 ==================
 *Output description*
