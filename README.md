@@ -64,6 +64,7 @@ python3 model_hyper.py filename
 
 filename: file containing label, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(bot bracket). All in one line separated by tab for a single instance.
 
+GPU code for model hyperparameter tuning requires NVIDIA RTX 5000 or higher GPUs.
 ==================
 *Output description*
 ==================
