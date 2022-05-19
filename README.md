@@ -75,8 +75,8 @@ lncRNA detection module (DeepPlnc) gives output in following format
 1. test.txt = Chunks wise probability score of the sequence provided.
 2. test_results.tsv = CLassification result of the sequence provided.
 3. plot = folder containing "csv" files to construct violin and line plot.
-4. seq.txt = Hyparameter for sequence side of bi-modal
-5. struc.txt = Hyparameter for structure side of bi-modal
+4. seq.txt = Hyparameter result for sequence side of bi-modal
+5. struc.txt = Hyparameter result for structure side of bi-modal
 
 ==================
 *Citation*
