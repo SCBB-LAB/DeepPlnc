@@ -60,10 +60,10 @@ python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 
 To build model implementing hyperparameter tuning
 
-python3 model_hyper.py filename
+python3 model_hyper.py file_for_tuning
 
-filename: file containing label, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(bot bracket). All in one line separated by tab for a single instance. 
-GPU code for model hyperparameter tuning requires NVIDIA RTX 5000 or higher GPUs.
+file_for_tuning: file containing label, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(bot bracket). All in one line separated by tab for a single instance. 
+
 
 
 ==================
@@ -75,14 +75,14 @@ lncRNA detection module (DeepPlnc) gives output in following format
 test.txt = Chunks wise probability score of the sequence provided.
 test_results.tsv = CLassification result of the sequence provided.
 plot = folder containing "csv" files to construct violin and line plot.
-
-
+seq.txt = Hyparameter for sequence side of bi-modal
+struc.txt = Hyparameter for structure side of bi-modal
 
 ==================
 *Citation*
 ==================
 
-Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v1
+Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v2
 
 
 
