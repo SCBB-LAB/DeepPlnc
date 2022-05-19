@@ -72,22 +72,14 @@ file_for_tuning: file containing label, sequence (sequence length of >= 200 base
 
 lncRNA detection module (DeepPlnc) gives output in following format 
 
-test.txt = Chunks wise probability score of the sequence provided.
-test_results.tsv = CLassification result of the sequence provided.
-plot = folder containing "csv" files to construct violin and line plot.
-seq.txt = Hyparameter for sequence side of bi-modal
-struc.txt = Hyparameter for structure side of bi-modal
+1. test.txt = Chunks wise probability score of the sequence provided.
+2. test_results.tsv = CLassification result of the sequence provided.
+3. plot = folder containing "csv" files to construct violin and line plot.
+4. seq.txt = Hyparameter for sequence side of bi-modal
+5. struc.txt = Hyparameter for structure side of bi-modal
 
 ==================
 *Citation*
 ==================
 
 Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v2
-
-
-
-
-
-
-
-
