@@ -34,7 +34,7 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 5. make-plot.py = Python script for box and violin plot generation for a single sequence.
 6. batch-plot.py = Python script for violin plot generation for a batch (10 sequence).
 7. predict_GPU.py = Python script for detecting lncRNAs utilizing GPU.
-9. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(bot bracket). All in one line separated by tab for a single instance.
+9. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(dot bracket). All in one line separated by tab for a single instance.
 8. model_hyper.py = Python script build model implementing hyperparameter tuning
 
 ==================
@@ -62,7 +62,7 @@ To build model implementing hyperparameter tuning
 
 python3 model_hyper.py file_for_tuning
 
-file_for_tuning: file containing label, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(bot bracket). All in one line separated by tab for a single instance. 
+file_for_tuning: file containing label, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(dot bracket). All in one line separated by tab for a single instance. 
 
 
 
@@ -73,7 +73,7 @@ file_for_tuning: file containing label, sequence (sequence length of >= 200 base
 lncRNA detection module (DeepPlnc) gives output in following format 
 
 1. test.txt = Chunks wise probability score of the sequence provided.
-2. test_results.tsv = CLassification result of the sequence provided.
+2. test_results.tsv = Classification result of the sequence provided.
 3. plot = folder containing "csv" files to construct violin and line plot.
 4. seq.txt = Hyparameters for sequence side of bi-modal
 5. struc.txt = Hyparameters for structure side of bi-modal
