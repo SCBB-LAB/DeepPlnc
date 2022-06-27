@@ -20,8 +20,7 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 5. plotly
 6. pandas
 7. RNAfold (ViennaRNA package download it from here: "https://www.tbi.univie.ac.at/RNA/")
-8. python module multiprocessing
-9. python module bayesian-optimization
+8. python module multiprocessing, Bio, bayesian-optimization 
 
 ==================
 *File description*
@@ -29,13 +28,14 @@ The lncRNA detection system has been implemented as a webserver at https://scbb.
 
 1. DeepPlnc.sh = Complete execution script.
 2. DeepPlnc.py = Python script for detecting lncRNAs from sequences provided.
-3. DeepPlnc_model.h5 = Trained model.
-4. test = fasta sequence. (Minimum 200 bases in length)
-5. make-plot.py = Python script for box and violin plot generation for a single sequence.
-6. batch-plot.py = Python script for violin plot generation for a batch (10 sequence).
-7. predict_GPU.py = Python script for detecting lncRNAs utilizing GPU.
+3. Model_A.h5 = Trained model have traditionally considered negative dataset of just mRNAs.
+4. Model_B.h5: Trained model has one-third of the negative dataset having plant rRNAs and tRNAs, along with two-third of it having mRNAs.
+5. test = fasta sequence. (Minimum 200 bases in length)
+6. make-plot.py = Python script for box and violin plot generation for a single sequence.
+7. batch-plot.py = Python script for violin plot generation for a batch (10 sequence).
+8. predict_GPU.py = Python script for detecting lncRNAs utilizing GPU.
 9. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(dot bracket). All in one line separated by tab for a single instance.
-8. model_hyper.py = Python script build model implementing hyperparameter tuning
+10. model_hyper.py = Python script build model implementing hyperparameter tuning
 
 ==================
 *Running script*
@@ -64,8 +64,6 @@ python3 model_hyper.py file_for_tuning
 
 file_for_tuning: file containing label, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(dot bracket). All in one line separated by tab for a single instance. 
 
-
-
 ==================
 *Output description*
 ==================
@@ -82,4 +80,4 @@ lncRNA detection module (DeepPlnc) gives output in following format
 *Citation*
 ==================
 
-Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v2
+Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. bioRxiv 2021. https://www.biorxiv.org/content/10.1101/2021.12.10.472074v3
