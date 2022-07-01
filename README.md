@@ -44,9 +44,9 @@ To predict the lncRNAs, In parent directory execute following command:
 
 sh DeepPlnc.sh test /usr/local/bin/ A
 
-test = test file.
-/usr/local/bin/ = Path of RNAfold in your local system
-A = Model to be selected for classification (Options : A|B)
+1. test = test file.
+2. /usr/local/bin/ = Path of RNAfold in your local system
+3. A = Model to be selected for classification (Options : A|B)
 
 python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
 
