@@ -84,4 +84,4 @@ lncRNA detection module (DeepPlnc) gives output in following format
 *Citation*
 ==================
 
-Citation: Ritu, Gupta S, Sharma NK, Shankar R (2021) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. Genomics, 2022. https://www.sciencedirect.com/science/article/pii/S0888754322001884
+Citation: Ritu, Gupta S, Sharma NK, Shankar R (2022) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. Genomics, 2022. https://www.sciencedirect.com/science/article/pii/S0888754322001884
