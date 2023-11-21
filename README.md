@@ -1,6 +1,6 @@
 # DeepPlnc
-*Description*
-===============
+
+<h2>Description</h2>
 DeepPlnc: A tool for discovering plant lncRNAs through multimodal deep learning on sequential data
 
 Long noncoding RNAs (lncRNAs) can be characterized as RNA transcripts with minimum length of 200 bases, and with short ORFs which are not translated into functional proteins. These lncRNAs plays pivotal role on the regulation in a wide range of biological and developmental processes in animals and plants. Among them the lncRNAs are very recent and most intriguing for their possible functions. Due to limited information about lncRNAs, their characterization remains a big challenge, especially in plants. Plant lncRNAs differ a lot from animal’s even in the mode of transcription as well as display poor sequence conservation. Scarce resources exist to annotate plant genomes and transcriptomes for lncRNAs with good credibility.
