@@ -1,6 +1,6 @@
 # DeepPlnc
 
-<h2>Description</h2>
+<h2>Introduction</h2>
 
 DeepPlnc: A tool for discovering plant lncRNAs through multimodal deep learning on sequential data
 
