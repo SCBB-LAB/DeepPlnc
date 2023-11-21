@@ -45,10 +45,12 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 ```
 
 ## 5. Running script
-#### 5.1 To predict the lncRNAs, In parent directory execute following command:
+#### 5.1 Prediction of the lncRNAs
+- For the identification of lncRNAs, execute following command in the parent directory:
 
+```
 sh DeepPlnc.sh test /usr/local/bin/ A
-
+```
 1. test = test file.
 2. /usr/local/bin/ = Path of RNAfold in your local system
 3. A = Model to be selected for classification (Options : A|B)
