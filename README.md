@@ -40,7 +40,7 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 6. make-plot.py = Python script for box and violin plot generation for a single sequence.
 7. batch-plot.py = Python script for violin plot generation for a batch (10 sequence).
 8. predict_GPU.py = Python script for detecting lncRNAs utilizing GPU.
-9. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
+9. file_format_GPU = File format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
 10. model_hyper.py = Python script used to build model implementing hyperparameter tuning.
 ```
 
@@ -50,11 +50,11 @@ For the identification of lncRNAs, execute following command in the parent direc
 
 ```
 sh DeepPlnc.sh test /usr/local/bin/ A
-
-**test** = Test file
-- /usr/local/bin/ = Path of RNAfold in your local system
-- A = Model to be selected for classification (Options : A|B)
 ```
+- **test** = Test file
+- **/usr/local/bin/** = Path of RNAfold in your local system
+- **A** = Model to be selected for classification (Options : A|B)
+
 #### 5.2 Detect lncRNA utilizing GPU
 To detect lncRNA using GPU, Run the following command: 
 
@@ -64,26 +64,30 @@ python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
 
 **Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
-`mkdir: cannot create directory ‘plot’: File exists`
+`mkdir: cannot create directory `plot`: File exists`
 
 #### 5.3 Visualization
 
-- To plot box and violin plot for a single sequence, switch to directory name `plot` and execute following command:
+- To plot box and violin plot for a single sequence, switch to directory name **`plot`** and execute following command:
 
 
 ```
 python3 ../make-plot.py seq1 (sequences file name without ".csv")
 ```
 
-- To plot violin plot for a batch (10 sequence), switch to directory name `**plot**` and execute following command:
+- To plot violin plot for a batch (10 sequence), switch to directory name **`plot`** and execute following command:
 
+```
 python3 ../batch-plot.py batch_1 (batch file name without ".csv")
+```
 
-To build model implementing hyperparameter tuning
-
+- To build model implementing hyperparameter tuning
+  
+```
 python3 model_hyper.py file_for_tuning
+```
 
-file_for_tuning: file containing label, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(dot bracket). All in one line separated by tab for a single instance. 
+**file_for_tuning**= file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs. 
 
 ==================
 *Output description*
