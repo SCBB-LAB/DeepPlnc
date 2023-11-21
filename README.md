@@ -2,9 +2,9 @@
 
 <h2>Introduction</h2>
 
-- Long non-coding RNAs (lncRNAs), characterized as RNA transcripts longer than 200 nucleotides without functional open reading frames, play critical regulatory roles in various biological and developmental processes in both animals and plants. Despite their recent discovery and intriguing potential functions, lncRNA characterization remains a significant challenge, particularly in plants due to limited information, distinct transcriptional patterns, low sequence conservation, and scarce resources for credible annotation in plant genomes and transcriptomes. This highlights the need for novel tools to effectively identify and characterize plant lncRNAs.
+Long non-coding RNAs (lncRNAs), characterized as RNA transcripts longer than 200 nucleotides without functional open reading frames, play critical regulatory roles in various biological and developmental processes in both animals and plants. Despite their recent discovery and intriguing potential functions, lncRNA characterization remains a significant challenge, particularly in plants due to limited information, distinct transcriptional patterns, low sequence conservation, and scarce resources for credible annotation in plant genomes and transcriptomes. This highlights the need for novel tools to effectively identify and characterize plant lncRNAs.
 
-- We introduce DeepPlnc, a deep learning-based software for accurately identifying plant lncRNAs across various plant genomes. Unlike most existing tools, DeepPlnc can even annotate incomplete length transcripts. It employs a bi-modal architecture of Convolution Neural Nets (CNNs) to extract information from both the nucleotide sequence and secondary structure of plant lncRNAs, enabling accurate lncRNA identification.
+We introduce DeepPlnc, a deep learning-based software for accurately identifying plant lncRNAs across various plant genomes. Unlike most existing tools, DeepPlnc can even annotate incomplete length transcripts. It employs a bi-modal architecture of Convolution Neural Nets (CNNs) to extract information from both the nucleotide sequence and secondary structure of plant lncRNAs, enabling accurate lncRNA identification.
 
 The user needs to provide the RNA-seq or any other sequence data in fasta format. This data is run through the trained bi-modal CNN which generates a scores for each sequence provided. 
 
