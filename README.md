@@ -64,7 +64,7 @@ python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
 
 **Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
-`mkdir: cannot create directory `plot`: File exists`
+`mkdir: cannot create directory plot: File exists`
 
 #### 5.3 Visualization
 
