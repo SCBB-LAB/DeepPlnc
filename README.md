@@ -55,7 +55,7 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 - **/usr/local/bin/** = Path of RNAfold in your local system
 - **A** = Model to be selected for classification (Options : A|B)
 
-#### 5.2 Detect lncRNA utilizing GPU
+#### 5.2 Prediction of the lncRNAs using GPU
 To detect lncRNA using GPU, Run the following command: 
 
 ```
