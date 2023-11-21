@@ -30,17 +30,18 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 9. python module multiprocessing, Bio, bayesian-optimization 
 
 ## 4. File description
-
+```
 1. DeepPlnc.sh = Complete execution script.
 2. DeepPlnc.py = Python script for detecting lncRNAs from sequences provided.
-3. Model_A.h5 = Trained model have traditionally considered negative dataset of just mRNAs.
-4. Model_B.h5: Trained model has one-third of the negative dataset having plant rRNAs and tRNAs, along with two-third of it having mRNAs.
-5. test = fasta sequence. (Minimum 200 bases in length)
+3. Model_A.h5 = Trained model have traditionally considered negative dataset (mRNA sequences).
+4. Model_B.h5 = Trained model has one-third of the negative dataset having plant rRNAs and tRNAs, along with two-third of it having mRNAs.
+5. test = Fasta sequence. (Minimum 200 bases in length)
 6. make-plot.py = Python script for box and violin plot generation for a single sequence.
 7. batch-plot.py = Python script for violin plot generation for a batch (10 sequence).
 8. predict_GPU.py = Python script for detecting lncRNAs utilizing GPU.
-9. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure(dot bracket). All in one line separated by tab for a single instance.
-10. model_hyper.py = Python script build model implementing hyperparameter tuning
+9. file_format_GPU = file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
+10. model_hyper.py = Python script used to build model implementing hyperparameter tuning.
+```
 
 ==================
 *Running script*
