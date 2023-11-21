@@ -18,9 +18,8 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 </p>
 <p align="center"><b>Figure: DeepPlnc webserver implementation</b></p> 
 
-===============
-*Requirements*
-===============
+## 3. Environment setup
+#### 3.1 Install the package and other requirements
 1. Python3.6 or higher
 2. Numpy
 3. keras
