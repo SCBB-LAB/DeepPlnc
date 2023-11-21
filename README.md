@@ -10,7 +10,12 @@ We introduce DeepPlnc, a deep learning-based software for accurately identifying
 The user needs to provide RNA-seq data or any nucleotide sequence data in a fasta format as an input. This data undergoes analysis via trained bi-modal Convolutional Neural Networks (CNNs), resulting in the generation of scores allocated to each provided sequence. These scores serve as an output, offering insights or assessments derived from the analysis conducted by the CNNs.
 
 <h2>2. Webserver</h2>
-A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.in/DeepPlnc/. User can identify lncRNAs by providing FASTA sequences as input.
+A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.in/DeepPlnc/. User can identify lncRNAs by providing FASTA sequences as input. There is an download option for the result in the tabular format where the first column indicates sequence ID and second column represents whether it is lncRNA or not.
+
+<p align="center">
+<img src="webserver.jpg">
+</p>
+<p align="center"><b>Figure: DeepPlnc webserver implementation</b></p> 
 
 ===============
 *Requirements*
