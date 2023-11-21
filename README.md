@@ -6,6 +6,7 @@ Long non-coding RNAs (lncRNAs), characterized as RNA transcripts longer than 200
 
 We introduce DeepPlnc, a deep learning-based software for accurately identifying plant lncRNAs across various plant genomes. Unlike most existing tools, DeepPlnc can even annotate incomplete length transcripts. It employs a bi-modal architecture of Convolutional Neural Networks (CNNs) to extract information from both the nucleotide sequence and secondary structure of plant lncRNAs, enabling accurate lncRNA identification.
 
+<h2>Data information</h2>
 The user needs to provide the RNA-seq or any other sequence data in fasta format. This data is run through the trained bi-modal CNN which generates a scores for each sequence provided. 
 
 The lncRNA detection system has been implemented as a webserver at https://scbb.ihbt.res.in/DeepPlnc/. 
