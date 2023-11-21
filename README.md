@@ -27,7 +27,6 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 5. plotly
 6. pandas
 7. <a href=https://www.tbi.univie.ac.at/RNA/>RNAfold</a> 
-8. RNAfold (ViennaRNA package download it from here: "https://www.tbi.univie.ac.at/RNA/")
 9. python module multiprocessing, Bio, bayesian-optimization 
 
 ==================
