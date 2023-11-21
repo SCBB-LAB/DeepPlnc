@@ -11,12 +11,12 @@ The user needs to provide RNA-seq data or any nucleotide sequence data in a fast
 
 <h2>2. Webserver</h2>
 A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.in/DeepPlnc/. User can identify lncRNAs by providing FASTA sequences as input. There is an download option for the result in the tabular format where the first column indicates sequence ID and second column represents whether it is lncRNA or not.
-
+<b>
 <p align="center">
 <img src="webserver.jpg">
 </p>
 <p align="center"><b>Figure: DeepPlnc webserver implementation</b></p> 
-
+</b>
 ===============
 *Requirements*
 ===============
