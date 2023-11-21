@@ -50,12 +50,16 @@ For the identification of lncRNAs, execute following command in the parent direc
 
 ```
 sh DeepPlnc.sh test /usr/local/bin/ A
-```
-1. test = test file.
-2. /usr/local/bin/ = Path of RNAfold in your local system
-3. A = Model to be selected for classification (Options : A|B)
 
+- test = Test file
+- /usr/local/bin/ = Path of RNAfold in your local system
+- A = Model to be selected for classification (Options : A|B)
+```
+#### 5.2 Detect lncRNA utilizing GPU
+To detect lncRNA using GPU, Run the following command: 
+```
 python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
+```
 
 NOTICE: When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
