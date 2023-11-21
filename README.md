@@ -45,7 +45,7 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 ```
 
 ## 5. Running script
-To predict the lncRNAs, In parent directory execute following command:
+#### 5.1 To predict the lncRNAs, In parent directory execute following command:
 
 sh DeepPlnc.sh test /usr/local/bin/ A
 
