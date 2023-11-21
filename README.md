@@ -1,15 +1,15 @@
 # DeepPlnc
 
-<h2>Introduction</h2>
+## Introduction
 
 Long non-coding RNAs (lncRNAs), characterized as RNA transcripts longer than 200 nucleotides without functional open reading frames, play critical regulatory roles in various biological and developmental processes in both animals and plants. Despite their recent discovery and intriguing potential functions, lncRNA characterization remains a significant challenge, particularly in plants due to limited information, distinct transcriptional patterns, low sequence conservation, and scarce resources for credible annotation in plant genomes and transcriptomes. This highlights the need for novel tools to effectively identify and characterize plant lncRNAs.
 
 We introduce DeepPlnc, a deep learning-based software for accurately identifying plant lncRNAs across various plant genomes. Unlike most existing tools, DeepPlnc can even annotate incomplete length transcripts. It employs a bi-modal architecture of Convolutional Neural Networks (CNNs) to extract information from both the nucleotide sequence and secondary structure of plant lncRNAs, enabling accurate lncRNA identification.
 
-<h2>1. Data information</h2>
+## 1. Data information
 The user needs to provide RNA-seq data or any nucleotide sequence data in a fasta format as an input. This data undergoes analysis via trained bi-modal Convolutional Neural Networks (CNNs), resulting in the generation of scores allocated to each provided sequence. These scores serve as an output, offering insights or assessments derived from the analysis conducted by the CNNs.
 
-<h2>2. Webserver</h2>
+## 2. Webserver
 A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.in/DeepPlnc/. User can identify lncRNAs by providing FASTA sequences as input. There is an download option for the result in the tabular format where the first column indicates sequence ID and second column represents whether it is lncRNA or not.
 <br>
 <br />
@@ -29,9 +29,7 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 7. <a href=https://www.tbi.univie.ac.at/RNA/>RNAfold</a> 
 9. python module multiprocessing, Bio, bayesian-optimization 
 
-==================
-*File description*
-==================
+## 4. File description
 
 1. DeepPlnc.sh = Complete execution script.
 2. DeepPlnc.py = Python script for detecting lncRNAs from sequences provided.
