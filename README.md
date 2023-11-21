@@ -51,7 +51,7 @@ For the identification of lncRNAs, execute following command in the parent direc
 ```
 sh DeepPlnc.sh test /usr/local/bin/ A
 
-- test = Test file
+**test** = Test file
 - /usr/local/bin/ = Path of RNAfold in your local system
 - A = Model to be selected for classification (Options : A|B)
 ```
@@ -62,11 +62,10 @@ To detect lncRNA using GPU, Run the following command:
 python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
 ```
 
-**`Note:`** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
+**Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
-```
-mkdir: cannot create directory ‘plot’: File exists 
-```
+`mkdir: cannot create directory ‘plot’: File exists`
+
 #### 5.3 Visualization
 
 - To plot box and violin plot for a single sequence, switch to directory name `plot` and execute following command:
