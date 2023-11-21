@@ -57,19 +57,26 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 ```
 #### 5.2 Detect lncRNA utilizing GPU
 To detect lncRNA using GPU, Run the following command: 
+
 ```
 python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
 ```
 
-NOTICE: When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
+**`Note:`** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
+```
 mkdir: cannot create directory ‘plot’: File exists 
+```
+#### 5.3 Visualization
 
-To plot box and violin plot for a single sequence, switch to directory name "plot" and execute following command:
+- To plot box and violin plot for a single sequence, switch to directory name `plot` and execute following command:
 
+
+```
 python3 ../make-plot.py seq1 (sequences file name without ".csv")
+```
 
-To plot violin plot for a batch (10 sequence), switch to directory name "plot" and execute following command:
+- To plot violin plot for a batch (10 sequence), switch to directory name `**plot**` and execute following command:
 
 python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 
