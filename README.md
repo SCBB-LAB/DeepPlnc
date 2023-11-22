@@ -33,7 +33,9 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 
 To extract the source code for DeepPlnc, execute the following commands:
 
-`unzip SeqConv.zip`
+```
+unzip SeqConv.zip
+```
 
 1. **`DeepPlnc.sh`** = Complete execution script.
 2. **`DeepPlnc.py`** = Python script for detecting lncRNAs from sequences provided.
