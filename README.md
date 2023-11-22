@@ -32,14 +32,12 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 Download and extract the source code for DeepPlnc, and then unzip this parent directory. Type the following commands:
 
 ```
-git clone [[https://github.com/SCBB-LAB/Comparative-analysis-of-plant-TFBS-software.git](https://github.com/SCBB-LAB/DeepPlnc.git)](https://github.com/SCBB-LAB/DeepPlnc.git)
+git clone https://github.com/SCBB-LAB/DeepPlnc.git
 cd DeepPlnc
 unzip DeepPlnc.zip
 ```
 
-**`unzip DeepPlnc.zip`**
-
-## 4. File description
+## 3.2. File description
 
 1. **`DeepPlnc.sh`** = Complete execution script.
 2. **`DeepPlnc.py`** = Python script for detecting lncRNAs from sequences provided.
@@ -53,8 +51,8 @@ unzip DeepPlnc.zip
 10. **`model_hyper.py`** = Python script used to build model implementing hyperparameter tuning.
 
 
-## 5. Running script
-#### 5.1 Prediction of the lncRNAs
+## 4. Running script
+#### 4.1 Prediction of the lncRNAs
 For the identification of lncRNAs, execute following command in the parent directory:
 
 ```
@@ -64,7 +62,7 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 - **/usr/local/bin/** = Path of RNAfold in your local system
 - **A** = Model to be selected for classification (Options : A|B)
 
-#### 5.2 Prediction of the lncRNAs using GPU
+#### 4.2 Prediction of the lncRNAs using GPU
 To detect lncRNA using GPU, Run the following command: 
 
 ```
@@ -75,7 +73,7 @@ python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
 
 `mkdir: cannot create directory plot: File exists`
 
-#### 5.3 Visualization
+#### 4.3 Visualization
 
 - To plot box and violin plot for a single sequence, switch to directory name **`plot`** and execute following command:
 
