@@ -54,7 +54,7 @@ In the parent directory, you will find a collection of files that are described 
 
 
 ## 4. Running script
-#### 4.1 Prediction of the lncRNAs
+### 4.1 Prediction of the lncRNAs
 For the identification of lncRNAs, execute following command in the parent directory:
 
 ```
@@ -64,7 +64,7 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 - **/usr/local/bin/** = Path of RNAfold in your local system
 - **A** = Model to be selected for classification (Options : A|B)
 
-#### 4.2 Prediction of the lncRNAs using GPU
+### 4.2 Prediction of the lncRNAs using GPU
 To detect lncRNA using GPU, Run the following command: 
 
 ```
@@ -72,12 +72,13 @@ python3 predict_GPU.py file_format_GPU A
 ```
 - **file_format_GPU** = File format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
 - **A** = Model to be selected for classification (Options : A|B)
-  
+
+#### 4.1 Hyper-parameter optimization
+
+For hyperparameter optimization of the model, run the following command:
 ```
 python3 model_hyper.py file_for_tuning
 ```
-
-**file_for_tuning**= file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs. 
 
 #### 4.3 Visualization
 
