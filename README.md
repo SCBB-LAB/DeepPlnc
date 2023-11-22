@@ -65,7 +65,7 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 - **A** = Model to be selected for classification (Options : A|B)
 
   
-#### **Output:** Two files, namely `test.txt` and `test_results.tsv`, are generated that contains `chunks wise probability score of the sequence provided` and `classification result of the sequence provided`.
+**Output:** Two files, namely `test.txt` and `test_results.tsv`, are generated that contains `chunks wise probability score of the sequence provided` and `classification result of the sequence provided`.
 
 ### 4.2 Prediction of the lncRNAs using GPU
 To detect lncRNA using GPU, Run the following command: 
@@ -103,6 +103,9 @@ python3 ../make-plot.py seq1 (sequences file name without ".csv")
 ```
 python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 ```
+
+
+**Output:** The plot is generated for a single sequence and for a batch of 10 sequences.
 **Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
 `mkdir: cannot create directory plot: File exists`
