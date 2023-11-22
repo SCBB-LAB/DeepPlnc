@@ -54,7 +54,7 @@ In the parent directory, you will find a collection of files that are described 
 
 
 ## 4. Running script
-### 4.1 Prediction of the lncRNAs
+#### 4.1 Prediction of the lncRNAs
 For the identification of lncRNAs, execute following command in the parent directory:
 
 ```
@@ -67,7 +67,7 @@ sh DeepPlnc.sh test /usr/local/bin/ A
   
 **Output:** Two files, namely `test.txt` and `test_results.tsv`, are generated that contains `chunks wise probability score of the sequence provided` and `classification result of the sequence provided`.
 
-### 4.2 Prediction of the lncRNAs using GPU
+#### 4.2 Prediction of the lncRNAs using GPU
 To detect lncRNA using GPU, Run the following command: 
 
 ```
@@ -79,7 +79,7 @@ python3 predict_GPU.py file_format_GPU A
   
 **Output:** One file, namely `file_format_GPU_prediction.txt`, is generated that contains `chunks wise probability score of the sequence provided`.
 
-### 4.3 Hyper-parameter optimization
+#### 4.3 Hyper-parameter optimization
 
 To build model implementing hyperparameter tuning, run the following command:
 ```
@@ -90,7 +90,7 @@ python3 model_hyper.py file_for_tuning
   
 **Output:** Two files, namely `seq.txt` and `struc.txt`, are generated that contains `hyparameters for sequence side of bi-modal` and `hyparameters for structure side of bi-modal`.
 
-### 4.4 Visualization
+#### 4.4 Visualization
 
 - To plot box and violin plot for a single sequence, switch to directory name **`plot`** and execute following command:
 
