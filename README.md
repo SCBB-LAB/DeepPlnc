@@ -68,7 +68,7 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 **Output:** Two files, namely `test.txt` and `test_results.tsv`, are generated that contains `chunks wise probability score of the sequence provided` and `classification result of the sequence provided`.
 
 #### 4.2 Prediction of the lncRNAs using GPU
-To detect lncRNA using GPU, Run the following command: 
+For the identification of lncRNAs using GPU, Run the following command: 
 
 ```
 python3 predict_GPU.py file_format_GPU A
