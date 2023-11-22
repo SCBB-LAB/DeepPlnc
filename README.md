@@ -37,7 +37,7 @@ cd DeepPlnc
 unzip DeepPlnc.zip
 ```
 
-## 3.2. File description
+#### 3.2. File description
 
 1. **`DeepPlnc.sh`** = Complete execution script.
 2. **`DeepPlnc.py`** = Python script for detecting lncRNAs from sequences provided.
