@@ -63,6 +63,8 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 - **test** = Test file
 - **/usr/local/bin/** = Path of RNAfold in your local system
 - **A** = Model to be selected for classification (Options : A|B)
+
+  
 **Output:** Two files, namely `test.txt` and `test_results.tsv`, are generated that contains `chunks wise probability score of the sequence provided` and `classification result of the sequence provided`.
 
 ### 4.2 Prediction of the lncRNAs using GPU
