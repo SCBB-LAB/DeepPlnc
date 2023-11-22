@@ -113,6 +113,6 @@ python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 
 `mkdir: cannot create directory plot: File exists`
 
-## 5. Citation
+## Citation
 
 Citation: Ritu, Gupta S, Sharma NK, Shankar R (2022) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. Genomics, 2022. https://www.sciencedirect.com/science/article/pii/S0888754322001884
