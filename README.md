@@ -73,7 +73,7 @@ For the identification of lncRNAs using GPU, Run the following command:
 ```
 python3 predict_GPU.py file_format_GPU A
 ```
-- **file_format_GPU** = File format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
+- **file_format_GPU** = This file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
 - **A** = Model to be selected for classification (Options : A|B)
 
   
@@ -85,7 +85,7 @@ To build model implementing hyperparameter tuning, run the following command:
 ```
 python3 model_hyper.py file_for_tuning
 ```
-- **file_format_GPU** = File format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
+- **file_format_GPU** = This file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
 
   
 **Output:** Two files, namely `seq.txt` and `struc.txt`, are generated that contains `hyparameters for sequence side of bi-modal` and `hyparameters for structure side of bi-modal`.
