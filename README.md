@@ -27,11 +27,15 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 5. plotly
 6. pandas
 7. <a href=https://www.tbi.univie.ac.at/RNA/>RNAfold</a> 
-9. python module multiprocessing, Bio, bayesian-optimization 
+9. python module multiprocessing, Bio, bayesian-optimization
 <br>
-To extract the source code for DeepPlnc, execute the following commands:
-<br>
-<br />
+Download and extract the source code for DeepPlnc, and then unzip this parent directory. Type the following commands:
+
+```
+git clone [[https://github.com/SCBB-LAB/Comparative-analysis-of-plant-TFBS-software.git](https://github.com/SCBB-LAB/DeepPlnc.git)](https://github.com/SCBB-LAB/DeepPlnc.git)
+cd DeepPlnc
+unzip DeepPlnc.zip
+```
 
 **`unzip DeepPlnc.zip`**
 
