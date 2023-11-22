@@ -32,7 +32,7 @@ A webserver for lncRNAs detection has been established at https://scbb.ihbt.res.
 ## 4. File description
 
 
-1. '**`DeepPlnc.sh`** = Complete execution script.'
+1. `**`DeepPlnc.sh`** = Complete execution script.`
 2. DeepPlnc.py = Python script for detecting lncRNAs from sequences provided.
 3. Model_A.h5 = Trained model have traditionally considered negative dataset (mRNA sequences).
 4. Model_B.h5 = Trained model has one-third of the negative dataset having plant rRNAs and tRNAs, along with two-third of it having mRNAs.
