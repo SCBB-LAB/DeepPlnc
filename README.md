@@ -113,20 +113,6 @@ python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 
 `mkdir: cannot create directory plot: File exists`
 
-==================
-*Output description*
-==================
-
-lncRNA detection module (DeepPlnc) gives output in following format 
-
-1. test.txt = Chunks wise probability score of the sequence provided.
-2. test_results.tsv = Classification result of the sequence provided.
-3. plot = folder containing "csv" files to construct violin and line plot.
-4. seq.txt = Hyparameters for sequence side of bi-modal
-5. struc.txt = Hyparameters for structure side of bi-modal
-
-==================
-*Citation*
-==================
+## 5. Citation
 
 Citation: Ritu, Gupta S, Sharma NK, Shankar R (2022) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. Genomics, 2022. https://www.sciencedirect.com/science/article/pii/S0888754322001884
