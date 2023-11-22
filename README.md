@@ -95,17 +95,20 @@ python3 model_hyper.py file_for_tuning
 - To plot box and violin plot for a single sequence, switch to directory name **`plot`** and execute following command:
 
 ```
+cd plot
 python3 ../make-plot.py seq1 (sequences file name without ".csv")
 ```
 
 - To plot violin plot for a batch (10 sequence), switch to directory name **`plot`** and execute following command:
 
 ```
+cd plot
 python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 ```
 
 
 **Output:** The plot is generated for a single sequence and for a batch of 10 sequences.
+
 **Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
 `mkdir: cannot create directory plot: File exists`
