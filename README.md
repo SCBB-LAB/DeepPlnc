@@ -68,12 +68,16 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 To detect lncRNA using GPU, Run the following command: 
 
 ```
-python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
+python3 predict_GPU.py file_format_GPU A
+```
+- **file_format_GPU** = File format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
+- **A** = Model to be selected for classification (Options : A|B)
+  
+```
+python3 model_hyper.py file_for_tuning
 ```
 
-**Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
-
-`mkdir: cannot create directory plot: File exists`
+**file_for_tuning**= file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs. 
 
 #### 4.3 Visualization
 
@@ -89,14 +93,11 @@ python3 ../make-plot.py seq1 (sequences file name without ".csv")
 ```
 python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 ```
+**Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
+
+`mkdir: cannot create directory plot: File exists`
 
 - To build model implementing hyperparameter tuning
-  
-```
-python3 model_hyper.py file_for_tuning
-```
-
-**file_for_tuning**= file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs. 
 
 ==================
 *Output description*
