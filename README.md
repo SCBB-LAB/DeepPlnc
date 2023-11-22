@@ -39,7 +39,7 @@ unzip DeepPlnc.zip
 
 #### 3.2. File description
 
-In this directory, you will discover a collection of files that are defined below.
+In this directory, you will find a collection of files that are defined below.
 
 1. **`DeepPlnc.sh`** = Complete execution script.
 2. **`DeepPlnc.py`** = Python script for detecting lncRNAs from sequences provided.
