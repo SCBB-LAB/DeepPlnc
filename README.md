@@ -64,18 +64,16 @@ sh DeepPlnc.sh test /usr/local/bin/ A
 - **/usr/local/bin/** = Path of RNAfold in your local system
 - **A** = Model to be selected for classification (Options : A|B)
 
-**Output:** Two files, namely `test.txt` and `test_results.tsv`, are generated having information for `chunks wise probability score of the sequence provided` and `classification result of the sequence provided`.
-
 #### 4.2 Prediction of the lncRNAs using GPU
 To detect lncRNA using GPU, Run the following command: 
 
 ```
-python3 predict_GPU.py file_format_GPU A
+python3 predict_GPU.py file_format_GPU # to detect lncRNA utilizing GPU
 ```
-- **file_format_GPU** = File format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
-- **A** = Model to be selected for classification (Options : A|B)
-  
-- **Output:** One file, namely `file_format_GPU_prediction.txt`, is generated having information for `chunks wise probability score of the sequence provided`.
+
+**Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
+
+`mkdir: cannot create directory plot: File exists`
 
 #### 4.3 Visualization
 
@@ -83,21 +81,14 @@ python3 predict_GPU.py file_format_GPU A
 
 
 ```
-cd plot
 python3 ../make-plot.py seq1 (sequences file name without ".csv")
 ```
 
 - To plot violin plot for a batch (10 sequence), switch to directory name **`plot`** and execute following command:
 
 ```
-cd plot
 python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 ```
-- **Output:** A folder named `plot` containing "csv" files to construct violin and line plot.
-  
-**Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
-
-`mkdir: cannot create directory plot: File exists`
 
 - To build model implementing hyperparameter tuning
   
@@ -107,9 +98,20 @@ python3 model_hyper.py file_for_tuning
 
 **file_for_tuning**= file format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs. 
 
-- **Output:** Two files, namely `seq.txt` and `struc.txt`, are generated having information for `hyparameters for sequence side of bi-modal` and `hyparameters for structure side of bi-modal`.
+==================
+*Output description*
+==================
 
+lncRNA detection module (DeepPlnc) gives output in following format 
 
-## 5. Citation
+1. test.txt = Chunks wise probability score of the sequence provided.
+2. test_results.tsv = Classification result of the sequence provided.
+3. plot = folder containing "csv" files to construct violin and line plot.
+4. seq.txt = Hyparameters for sequence side of bi-modal
+5. struc.txt = Hyparameters for structure side of bi-modal
+
+==================
+*Citation*
+==================
 
 Citation: Ritu, Gupta S, Sharma NK, Shankar R (2022) DeepPlnc: Discovering plant lncRNAs through multimodal deep learning on sequential data. Genomics, 2022. https://www.sciencedirect.com/science/article/pii/S0888754322001884
