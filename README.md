@@ -73,17 +73,16 @@ python3 predict_GPU.py file_format_GPU A
 - **file_format_GPU** = File format of input for script predict_GPU.py. file containing seq_id, sequence (sequence length of >= 200 bases but not > 400 bases), and secondary structure generated using RNAfold software (in dot bracket representation) separated by tabs.
 - **A** = Model to be selected for classification (Options : A|B)
 
-#### 4.1 Hyper-parameter optimization
+### 4.3 Hyper-parameter optimization
 
-For hyperparameter optimization of the model, run the following command:
+To build model implementing hyperparameter tuning, run the following command:
 ```
 python3 model_hyper.py file_for_tuning
 ```
 
-#### 4.3 Visualization
+### 4.4 Visualization
 
 - To plot box and violin plot for a single sequence, switch to directory name **`plot`** and execute following command:
-
 
 ```
 python3 ../make-plot.py seq1 (sequences file name without ".csv")
@@ -97,8 +96,6 @@ python3 ../batch-plot.py batch_1 (batch file name without ".csv")
 **Note:** When you run DeepPlnc, please make sure there are no folder named "plot" in parent directory, otherwise it will give unnecessary warning:
 
 `mkdir: cannot create directory plot: File exists`
-
-- To build model implementing hyperparameter tuning
 
 ==================
 *Output description*
